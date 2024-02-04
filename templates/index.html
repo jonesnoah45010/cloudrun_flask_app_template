@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Index</title>
+    <!-- The line below speficies that this html page will use the styling specified in static/css/index.css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+
+<body>
+    <h1>This is the Index</h1>
+    <p>Below is data pulled from flask...</p>
+
+    <!-- The live below will contain data inserted from the /index flask endpoint in main.py using Jinja2 templating-->
+    <p>{{info|safe}}</p>
+
+    <p>Below is a button leading to another page...</p>
+    <button onclick="window.location.href='/render_form'">Go to Form</button>
+
+    <br>
+
+    <p>Below is an image saved in the static/images folder of the flask app...</p>
+    <img src="{{ url_for('static', filename='images/cute_frog.png') }}" alt="this is a cute frog" width="200" height="200">
+</body>
+
+</html>
+
+

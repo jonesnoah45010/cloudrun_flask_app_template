@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Submit Form</title>
+    <!-- Link below is to the external CSS file controlling this pages styling-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/form.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<h1>This is an Example of a Form</h1>
+
+
+<form id="myForm">
+	<!-- See static/js/form.js to see what happens when the submit button in this form is clicked-->
+    <label for="message">Message:</label>
+    <input type="text" id="message" name="message">
+    <input type="submit" value="Submit">
+</form>
+
+<!-- After clicking the submit button above, a response will show up in the element below. see static/js/form.js for details-->
+<div id="response"></div>
+
+
+<br>
+
+
+
+<h1>This is an Examploe of a File Upload</h1>
+<p>files will show up in the tmp folder of the Flask App</p>
+<form id='fileUploadForm' enctype="multipart/form-data">
+	<!-- See static/js/form.js to see what happens when the submit button in this form is clicked-->
+    <input type="file" name="file">
+    <input type="submit" value="Upload">
+</form>
+
+<!-- After clicking the submit button above, a response will show up in the element below. see static/js/form.js for details-->
+<p id="fileUploadSubmitMessage"></p>
+
+
+<br>
+
+<button onclick="window.location.href='/'">Go Back To Index</button>
+
+<!-- Link blow specifies that this pages has access to any JavaScript defined in the static/js/form.js file -->
+<script src="{{ url_for('static', filename='js/form.js') }}"></script>
+
+</body>
+</html>
