@@ -161,7 +161,7 @@ Create a virtual environment named `my_venv`:
 
 - Run the following command in your desired working directory
 
-- `git clone REPO_LINK_HERE`
+- `git clone https://github.com/jonesnoah45010/cloudrun_flask_app_template.git`
 
 #### 2. Install Python Libraries Using Pip:
 - You will need to install the python modules used by this app before running it. You will only need to do this once for this virtual environment. If you want to run this app in a new virtual environment, you will need to do this again.
