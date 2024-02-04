@@ -155,7 +155,7 @@ Create a virtual environment named `my_venv`:
 
 ### Step 2:  Running the Code Locally
 
-- Now that you have activated a virtual environment, you can clone the code into your desired working directory.  If you are new to virtual environments and github, I would recommend cloning the code into the same directory that your virtual environment folder is sitting.  This will make it easy to know that your project is dependent on that virtual environment.  Never put the entire virtual environment folder into the actual github directory that shows up after cloning the repository, as this can lead to accidentally uploading the fairly large environment directory into github once you start pushing your additions into a branch/fork.
+- Now that you have activated a virtual environment, you can clone the code into your desired working directory.  
 
 #### 1. Get the code:
 
